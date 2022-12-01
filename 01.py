@@ -11,6 +11,6 @@ with open('input01.txt', 'r') as f:
                         int(curr), map(lambda x: int(x), snacks)))
     calories.sort()
     top3carriers = calories[len(calories)-3: len(calories)]
-    print(top3carriers)
     sumtotal3carriers = reduce(lambda acc, curr: acc + curr, top3carriers)
+    # Answer to Q1 (elf with most calories) && Q2 (three most elves carrying)
     print(sumtotal3carriers)
